@@ -9,11 +9,6 @@ const meta = {
 
 const introdata = {
   title: "I’m Laki Kishor Subba",
-  animated: {
-    first: "I love software development",
-    second: "I build modern web apps",
-    third: "I'm a DevOps enthusiast",
-  },
   description:
     "Undergraduate student pursuing a Bachelor of Engineering in Information Technology at College of Science and Technology. Passionate about continuous learning and modern software technologies.",
   your_img_url: profileImg,
