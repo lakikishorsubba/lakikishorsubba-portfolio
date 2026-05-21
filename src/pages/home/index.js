@@ -100,20 +100,6 @@ export const Home = () => {
                   </a>
                 </motion.div>
               </div>
-
-              <motion.div 
-                className="hero-visual"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.4, duration: 1 }}
-              >
-                <div className="earth-container">
-                  <div className="earth">
-                    <div className="earth-texture"></div>
-                  </div>
-                  <div className="earth-overlay"></div>
-                </div>
-              </motion.div>
             </div>
 
             <motion.div 
