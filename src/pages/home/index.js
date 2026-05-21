@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -57,62 +56,65 @@ export const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <motion.div 
-              className="avatar-wrapper"
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.5, type: "spring", stiffness: 260, damping: 20 }}
-            >
-              <img src={introdata.your_img_url} alt="profile" className="hero-avatar" />
-            </motion.div>
-            <div className="hero-header">
-              <motion.h2 
-                className="intro-title"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.2 }}
-              >
-                {introdata.title}
-              </motion.h2>
-              
-              <div className="animated-roles">
-                <Typewriter
-                  options={{
-                    strings: [
-                      introdata.animated.first,
-                      introdata.animated.second,
-                      introdata.animated.third,
-                    ],
-                    autoStart: true,
-                    loop: true,
-                    deleteSpeed: 50,
-                  }}
-                />
+            <div className="hero-content-wrapper">
+              <div className="hero-info">
+                <motion.div 
+                  className="avatar-wrapper"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 0.5, type: "spring", stiffness: 260, damping: 20 }}
+                >
+                  <img src={introdata.your_img_url} alt="profile" className="hero-avatar" />
+                </motion.div>
+                <div className="hero-header">
+                  <motion.h2 
+                    className="intro-title"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.2 }}
+                  >
+                    {introdata.title}
+                  </motion.h2>
+
+                  <motion.p 
+                    className="hero-tagline"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.4 }}
+                  >
+                    {introdata.tagline || introdata.description}
+                  </motion.p>
+                </div>
+
+                <motion.div 
+                  className="intro_btn-action"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.6 }}
+                >
+                  <Link to="/portfolio" className="hero-cta cta-primary">
+                    View Projects
+                  </Link>
+                  <a href={introdata.resume_url} className="hero-cta cta-secondary">
+                    Download Resume
+                  </a>
+                </motion.div>
               </div>
 
-              <motion.p 
-                className="hero-tagline"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.4 }}
+              <motion.div 
+                className="hero-visual"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.4, duration: 1 }}
               >
-                {introdata.tagline || introdata.description}
-              </motion.p>
+                <div className="earth-container">
+                  <div className="earth">
+                    <div className="earth-texture"></div>
+                  </div>
+                  <div className="earth-overlay"></div>
+                </div>
+              </motion.div>
             </div>
-
-            <motion.div 
-              className="intro_btn-action"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
-            >
-              <Link to="/portfolio" className="hero-cta cta-primary">
-                View Projects
-              </Link>
-              <a href={introdata.resume_url} className="hero-cta cta-secondary">
-                Download Resume
-              </a>
-            </motion.div>
 
             <motion.div 
               className="tech-stack-preview"
