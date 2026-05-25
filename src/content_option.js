@@ -1,4 +1,5 @@
 import profileImg from "./assets/images/image.jpeg";
+import resumePDF from "./assets/images/LakiKishorSubba_Resume.pdf";
 
 const logotext = "LAKI";
 const meta = {
@@ -10,25 +11,25 @@ const meta = {
 const introdata = {
   title: "I’m Laki Kishor Subba",
   description:
-    "Undergraduate student pursuing a Bachelor of Engineering in Information Technology at College of Science and Technology. Passionate about continuous learning and modern software technologies.",
+    "Undergraduate student pursuing a Bachelor of Engineering in Information Technology (BE IT) with a strong foundation in computer science and software development. Passionate about software development and dedicated to continuous learning in fast-paced technical landscapes.",
   your_img_url: profileImg,
-  resume_url: "#", // Add your resume link here
+  resume_url: resumePDF,
   tagline:
     "Building digital experiences that combine technical excellence with artistic design.",
   techstack: [
-    { name: "React", icon: "SiReact", color: "#61DAFB" },
-    { name: "Node.js", icon: "SiNodedotjs", color: "#339933" },
     { name: "Python", icon: "SiPython", color: "#3776AB" },
-    { name: "Docker", icon: "SiDocker", color: "#2496ED" },
-    { name: "Ruby on Rails", icon: "SiRubyonrails", color: "#CC0000" },
+    { name: "Ruby", icon: "SiRuby", color: "#CC342D" },
     { name: "JavaScript", icon: "SiJavascript", color: "#F7DF1E" },
+    { name: "Ruby on Rails", icon: "SiRubyonrails", color: "#CC0000" },
+    { name: "DevOps", icon: "SiDocker", color: "#2496ED" },
+    { name: "GraphQL", icon: "SiGraphql", color: "#E10098" },
   ],
 };
 
 const dataabout = {
-  title: "A bit about myself",
+  title: "About Me",
   aboutme:
-    "I am an Undergraduate student pursuing a Bachelor of Engineering in Information Technology at College of Science and Technology. I have a strong foundation in computer science and software development, with a passion for continuous learning and modern software technologies. My journey includes developing the official college website and interned at SELISE Digital Platforms.",
+    "Undergraduate student pursuing a Bachelor of Engineering in Information Technology (BE IT) with a strong foundation in computer science and software development. Passionate about software development and dedicated to continuous learning in fast-paced technical landscapes.",
 };
 const worktimeline = [
   {
@@ -78,7 +79,7 @@ const skills = [
     value: 75,
   },
   {
-    name: "DevOps",
+    name: "DevOps Basics",
     value: 70,
   },
 ];
@@ -87,17 +88,17 @@ const services = [
   {
     title: "Software Development",
     description:
-      "Building robust and scalable software solutions tailored to user needs, with a focus on clean code and maintainability.",
+      "Developing SELISE Club and gaining practical software development experience during internship at SELISE Bhutan.",
   },
   {
     title: "Web Development",
     description:
-      "Creating responsive and interactive web applications using modern frameworks and CMS like WordPress.",
+      "Developed College of Science and Technology’s website using WordPress, gaining practical web development skills.",
   },
   {
     title: "System Administration",
     description:
-      "Basic DevOps and system management, ensuring applications are deployed and running smoothly.",
+      "Relevant coursework and hands-on experience in DevOps basics and system administration.",
   },
 ];
 
@@ -105,25 +106,19 @@ const dataportfolio = [
   {
     img: "https://picsum.photos/400/?grayscale",
     description:
-      "CST Official Website - Developed using WordPress and hosted successfully.",
+      "CST Website - Developed a College of Science and Technology’s website using WordPress and successfully hosted.",
     link: "https://cst.edu.bt",
   },
   {
     img: "https://picsum.photos/400/800/?grayscale",
     description:
-      "Fitness Tracking Application - A mini project to track daily workouts and health metrics.",
+      "Software development mini projects, including a fitness tracking application, a simple chess game, and a job portal.",
     link: "#",
   },
   {
     img: "https://picsum.photos/400/?grayscale",
     description:
-      "Simple Chess Game - A strategic game built with core programming logic.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/600/?grayscale",
-    description:
-      "Job Portal System - A platform for connecting job seekers with opportunities.",
+      "SELISE Blocks - Contributing to digital platforms and gaining practical experience.",
     link: "#",
   },
 ];
@@ -132,18 +127,15 @@ const contactConfig = {
   YOUR_EMAIL: "lakikishor7@gmail.com",
   YOUR_FONE: "+975 77741165",
   description:
-    "Based in Thimphu, Bhutan. Feel free to reach out for collaborations or any inquiries.",
-  // creat an emailjs.com account
-  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
+    "Thimphu, Bhutan. Feel free to reach out for collaborations or any inquiries.",
   YOUR_SERVICE_ID: "service_id",
   YOUR_TEMPLATE_ID: "template_id",
   YOUR_USER_ID: "user_id",
 };
 
 const socialprofils = {
-  github: "https://github.com",
-  linkedin: "https://linkedin.com/in/laki-kishor-subba-0a97b7294",
-  twitter: "https://twitter.com",
+  github: "https://github.com/laki-kishorsubba-0a97b7294",
+  linkedin: "https://linkedin.com/in/laki-kishor-subba0a97b7294",
   email: "mailto:lakikishor7@gmail.com",
 };
 
@@ -152,7 +144,7 @@ const leadership = [
     title: "Class Representative",
     where: "College of Science and Technology",
     description:
-      "Coordinated between students and faculty; represented student leadership initiatives.",
+      "Represented as a student leader of the class and coordinated between students and the college faculty (2022 - present).",
   },
 ];
 
@@ -164,7 +156,8 @@ const coursework = [
   "Operating Systems",
   "Computer Networks",
   "Internet of Things (IoT)",
-  "AI & Machine Learning",
+  "AI and Machine learning",
+  "DevOps Basics",
   "System Administration",
 ];
 
@@ -182,3 +175,4 @@ export {
   leadership,
   coursework,
 };
+

@@ -56,16 +56,17 @@ export const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
+            <motion.div 
+              className="avatar-wrapper"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.5, type: "spring", stiffness: 260, damping: 20 }}
+            >
+              <img src={introdata.your_img_url} alt="profile" className="hero-avatar" />
+            </motion.div>
+
             <div className="hero-content-wrapper">
               <div className="hero-info">
-                <motion.div 
-                  className="avatar-wrapper"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ delay: 0.5, type: "spring", stiffness: 260, damping: 20 }}
-                >
-                  <img src={introdata.your_img_url} alt="profile" className="hero-avatar" />
-                </motion.div>
                 <div className="hero-header">
                   <motion.h2 
                     className="intro-title"
@@ -95,7 +96,7 @@ export const Home = () => {
                   <Link to="/portfolio" className="hero-cta cta-primary">
                     View Projects
                   </Link>
-                  <a href={introdata.resume_url} className="hero-cta cta-secondary">
+                  <a href={introdata.resume_url} className="hero-cta cta-secondary" download>
                     Download Resume
                   </a>
                 </motion.div>
